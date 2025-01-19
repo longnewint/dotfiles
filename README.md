@@ -1,4 +1,4 @@
-# dnf package manager config /etc/dnf/dnf.conf
+## dnf package manager config /etc/dnf/dnf.conf
 fastestmirror=True
 defaultyes=True
 keepcache=True
