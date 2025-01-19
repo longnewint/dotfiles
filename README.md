@@ -3,48 +3,48 @@ fastestmirror=True
 defaultyes=True
 keepcache=True
 
-# install extra apps
+## install extra apps
 sudo dnf install chromium evince mpv neovim nnn rofi i3lock sxiv
 
-# install extra system utils
+## install extra system utils
 sudo dnf install bat btop fastfetch fzf git hwinfo ncdu tmux xrandr zstd
 
-# install fonts
+## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
 
 0xProto
 
-# set default xfce themes and icons
+## set default xfce themes and icons
 xfconf-query -c xsettings -p /Net/ThemeName -s ""
 fconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita"
 xfconf-query -c xfwm4 -p /general/theme -s "Default"
 
-# set i3lock as the default lock program and enable lock on suspend
+## set i3lock as the default lock program and enable lock on suspend
 xfconf-query --create -c xfce4-session -p /general/LockCommand -t string -s "i3lock"
 xfconf-query --create -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s true
 
-# find pulse audio plugin number
+## find pulse audio plugin number
 xfconf-query -c xfce4-panel -lv | grep pulseaudio
 
-# change volume step to 3 with plugin number 8
+## change volume step to 3 with plugin number 8
 xfconf-query -c xfce4-panel -p /plugins/plugin-8/volume-step --create -t int -s 3
 
-# change font setting of power manager plugin on xfce panel(~/.config/gtk-3.0/gtk.css)
+## change font setting of power manager plugin on xfce panel(~/.config/gtk-3.0/gtk.css)
 #xfce4-power-manager-plugin {
 	font-family: 'Inter SemiBold';
 	font-size: 16px;
 }
 
-# fixing backlight issues with kernel parameters
+## fixing backlight issues with kernel parameters
 https://jfearn.fedorapeople.org/fdocs/en-US/Documentation/0.1/html/Fedora_Multiboot_Guide/GRUB-configuration.html
 
-# increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
+## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
 
-# update new grub config
+## update new grub config
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
-# change console font to spleen
+## change console font to spleen
 sudo cp spleen-8x16.psfu /lib/kbd/consolefonts
 
 sudo -e /etc/vconsole.conf
@@ -52,7 +52,7 @@ FONT="spleen-8x16"
 
 sudo dracut -f
 
-# mpv config
+## mpv config
 https://github.com/hl2guide/better-mpv-config
 https://github.com/Zabooby/mpv-config
 
