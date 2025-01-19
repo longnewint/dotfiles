@@ -1,14 +1,14 @@
 
-# install sdkman and java
+## install sdkman and java
 
-# add $PATH=$JAVA_HOME/bin:$PATH to ~/.profile
+## add $PATH=$JAVA_HOME/bin:$PATH to ~/.profile
 
-# git config
+## git config
 git config --global init.defaultBranch main
 
-# c dev tool
+## c dev tool
 sudo dnf groupinstall 'Development Tools'
 
-# install wrk2
+## install wrk2
 sudo dnf install openssl-devel zlib-ng-compat-devel
 
