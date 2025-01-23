@@ -1,0 +1,5 @@
+configuration {
+  font: "Hack 12";
+}
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
