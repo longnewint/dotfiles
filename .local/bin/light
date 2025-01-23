@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -eu
+
+xrandr --output eDP-1 --brightness $1
