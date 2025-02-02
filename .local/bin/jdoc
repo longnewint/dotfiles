@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -eu
+
+chromium-browser /usr/share/javadoc/java-21/index.html
