@@ -36,19 +36,20 @@ xfconf-query -c xfce4-panel -p /plugins/plugin-8/volume-step --create -t int -s 
 }
 
 ## fixing backlight issues with kernel parameters
-https://jfearn.fedorapeople.org/fdocs/en-US/Documentation/0.1/html/Fedora_Multiboot_Guide/GRUB-configuration.html
-
-## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
-https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
+Edit file /etc/default/grub
+Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
 
 ## update new grub config
 sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 
+## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
+https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
+
 ## change console font to spleen
-sudo cp spleen-8x16.psfu /lib/kbd/consolefonts
+sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
 
 sudo -e /etc/vconsole.conf
-FONT="spleen-8x16"
+FONT="spleen-12x24"
 
 sudo dracut -f
 
