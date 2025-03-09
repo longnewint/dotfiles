@@ -1,0 +1,27 @@
+# System aliases
+alias f="cd"
+alias l="ls"
+alias ll="ls -al"
+alias v="nvim"
+alias n="n -AR"
+alias fetch="fastfetch"
+alias fz="fzf"
+alias tm="tmux"
+
+alias ud="sudo dnf check-update"
+alias ug="sudo dnf upgrade -y"
+alias ss="sudo systemctl"
+
+alias xfhalt="xfce4-session-logout --halt"
+alias xfboot="xfce4-session-logout --reboot"
+alias lout="xfce4-session-logout --logout"
+alias sus="xfce4-session-logout --suspend"
+alias lk="i3lock"
+
+# Development aliases
+alias doc="chromium-browser /usr/share/javadoc/java/index.html"
+alias jv="java"
+
+# Application
+alias iv="qimgv"
+alias sx="sxiv"
