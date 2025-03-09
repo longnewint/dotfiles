@@ -1,13 +1,14 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1='%1~ %# - '
-setopt autocd
-stty stop undef
+PS1='%1~ - '
+setopt autocd nomatch
 setopt interactive_comments
+stty stop undef
 zstyle :compinstall filename '/home/nhl/.zshrc'
 
 # History config
+HISTFILE="/home/nhl/.zhistory"
 HISTSIZE=1000000
 SAVEHIST=1000000
 setopt inc_append_history
@@ -81,15 +82,15 @@ n()
     fi
 }
 
-# Quote
-quote='"May each of you rise high by spending each day of a long life aiming low."'
-echo -e "\n$quote\n"
-
 # nnn environment
 #export NNN_BMS='h:~;d:~/Downloads;m:~/textbook;t:~/Algonquin/L4Theory;l:~/Algonquin/L4Lab'
 export NNN_COLORS='#48afd609'
 export NNN_FCOLORS='41dc6d8e006033f7c6d6aba7'
 export NNN_TRASH=1
+
+# Quote
+quote='"May each of you rise high by spending each day of a long life aiming low."'
+echo -e "\n$quote\n"
 
 # System aliases
 alias f="cd"
@@ -119,11 +120,6 @@ alias jv="java"
 alias iv="qimgv"
 alias sx="sxiv"
 
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
 
 # Auto start x server on tty 1
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
