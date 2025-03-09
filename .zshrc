@@ -8,7 +8,6 @@ setopt interactive_comments
 zstyle :compinstall filename '/home/nhl/.zshrc'
 
 # History config
-HISTFILE=~/.cache/zsh/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
 setopt inc_append_history
