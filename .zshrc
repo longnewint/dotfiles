@@ -1,14 +1,14 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1='%1~ - '
+PS1='%F{072}%1~%f - '
 setopt autocd nomatch
 setopt interactive_comments
 stty stop undef
-zstyle :compinstall filename '/home/nhl/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 # History config
-HISTFILE="/home/nhl/.zhistory"
+HISTFILE="$HOME/.zhistory"
 HISTSIZE=1000000
 SAVEHIST=1000000
 setopt inc_append_history
@@ -92,34 +92,11 @@ export NNN_TRASH=1
 quote='"May each of you rise high by spending each day of a long life aiming low."'
 echo -e "\n$quote\n"
 
-# System aliases
-alias f="cd"
-alias l="ls"
-alias ll="ls -al"
-alias v="nvim"
-alias n="n -AR"
-alias fetch="fastfetch"
-alias fz="fzf"
-alias tm="tmux"
+function load () {
+    [ -f $1 ] && source $1
+}
 
-alias ud="sudo dnf check-update"
-alias ug="sudo dnf upgrade -y"
-alias ss="sudo systemctl"
-
-alias xfhalt="xfce4-session-logout --halt"
-alias xfboot="xfce4-session-logout --reboot"
-alias lout="xfce4-session-logout --logout"
-alias sus="xfce4-session-logout --suspend"
-alias lk="i3lock"
-
-# Development aliases
-alias doc="chromium-browser /usr/share/javadoc/java/index.html"
-alias jv="java"
-
-# Application
-alias iv="qimgv"
-alias sx="sxiv"
-
+load "$HOME/.aliasrc"
 
 # Auto start x server on tty 1
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
