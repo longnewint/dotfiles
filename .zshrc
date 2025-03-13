@@ -92,6 +92,7 @@ export NNN_TRASH=1
 quote='"May each of you rise high by spending each day of a long life aiming low."'
 echo -e "\n$quote\n"
 
+# Load external configuration
 function load () {
     [ -f $1 ] && source $1
 }
@@ -106,3 +107,4 @@ fi
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
