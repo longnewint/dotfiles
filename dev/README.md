@@ -14,7 +14,12 @@ sudo dnf install java-21-openjdk-javadoc
 ## git config
 git config --global init.defaultBranch main
 
-## dbeaver config
+## dbeaver vim config
+Go to Help > Install New Software
+Click on Add...
+Name: Vrapper
+Location: https://vrapper.sourceforge.net/update-site/stable/
+Install Vrapper
 
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
