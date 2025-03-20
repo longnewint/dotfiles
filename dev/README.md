@@ -14,6 +14,8 @@ sudo dnf install java-21-openjdk-javadoc
 ## git config
 git config --global init.defaultBranch main
 
+## dbeaver config
+
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
 
