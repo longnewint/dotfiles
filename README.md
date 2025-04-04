@@ -7,7 +7,7 @@ keepcache=True
 sudo dnf install chromium evince mpv neovim nnn rofi i3lock sxiv
 
 ## install extra system utils
-sudo dnf install bat btop fastfetch fzf git hwinfo ncdu tmux wmctrl xrandr zstd
+sudo dnf install bat btop fastfetch fzf git hwinfo ncdu tmux wmctrl xrandr
 
 ## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
