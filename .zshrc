@@ -74,7 +74,7 @@ n()
     # Default flags go here
     # DEFAULT_NNN_FLAG="A"
 
-    nnn "$@"
+    nnn "$@" -AR
 
     if [ -f "$NNN_TMPFILE" ]; then
             . "$NNN_TMPFILE"
