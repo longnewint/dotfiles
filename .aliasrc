@@ -1,5 +1,5 @@
 # System aliases
-alias f="cd"
+alias c="cd"
 alias l="ls"
 alias ll="ls -al"
 alias v="nvim"
