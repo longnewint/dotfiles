@@ -1,0 +1,25 @@
+[user]
+	email = longnewint@gmail.com
+	name = Long Nguyen
+[init]
+	defaultBranch = main
+[alias]
+  which = !git branch | grep -i
+  summary = !git log \
+    --all \
+    --since='10am yesterday' \
+    --format=%s
+  graph = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset" --abbrev-commit --all
+  sclone = clone --depth=1
+  s = status -s
+  ss = status
+  ci = commit
+  co = checkout
+  rh = reset HEAD
+  a = add
+  aa = add -A
+  pr = pull --rebase
+  br = branch
+  bra = branch -a
+  amend = commit -a --amend --no-edit
+  ciam = commit -am
