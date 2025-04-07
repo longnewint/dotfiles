@@ -6,8 +6,11 @@ alias fetch="fastfetch"
 alias fz="fzf"
 alias tm="tmux"
 
+# dnf
 alias ud="sudo dnf check-update"
 alias ug="sudo dnf upgrade -y"
+
+# systemctl
 alias ss="sudo systemctl"
 
 alias xfhalt="xfce4-session-logout --halt"
@@ -18,8 +21,8 @@ alias lk="i3lock"
 
 # Development aliases
 alias doc="chromium-browser /usr/share/javadoc/java/index.html"
-alias g = "git"
-alias j ="java"
+alias g="git"
+alias j="java"
 
 # Application
 alias iv="qimgv"
