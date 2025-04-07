@@ -18,7 +18,8 @@ alias lk="i3lock"
 
 # Development aliases
 alias doc="chromium-browser /usr/share/javadoc/java/index.html"
-alias j="java"
+alias g = "git"
+alias j ="java"
 
 # Application
 alias iv="qimgv"
