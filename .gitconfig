@@ -23,3 +23,4 @@
   bra = branch -a
   amend = commit -a --amend --no-edit
   ciam = commit -am
+  ps = push origin main
