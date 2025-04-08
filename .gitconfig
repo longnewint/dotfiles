@@ -22,5 +22,6 @@
   br = branch
   bra = branch -a
   amend = commit -a --amend --no-edit
+  cim = commit -m
   ciam = commit -am
   ps = push origin main
