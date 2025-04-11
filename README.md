@@ -51,7 +51,7 @@ XDG_STATE_HOME DEFAULT=@{HOME}/.local/state
 
 ## clean home dir
 
-xrdb -load ~/.config/X11/xresources
+xrdb -load ~/.config/X11/Xresources
 export XAUTHORITY="$XDG_RUNTIME_DIR"/.config/X11/Xauthority <!--- Might break display managers -->
 ### zsh
 
