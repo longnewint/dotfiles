@@ -57,7 +57,8 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/.config/X11/Xauthority <!--- Might break di
 
 ### postgres
 export PSQLRC="$XDG_CONFIG_HOME/psql/psqlrc"
-
+### other
+export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 
 ## change console font to spleen
 sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
