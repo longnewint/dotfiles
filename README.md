@@ -7,7 +7,7 @@ keepcache=True
 sudo dnf install chromium evince mpv neovim nnn rofi i3lock sxiv
 
 ## install extra system utils
-sudo dnf install bat btop eza fastfetch fd-find fzf git hwinfo ncdu tldr tmux wmctrl xrandr zoxide
+sudo dnf install bat btop eza fastfetch fd-find fzf git hwinfo ncdu tldr tmux wmctrl xdotool xrandr zoxide
 
 ## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
@@ -52,11 +52,11 @@ XDG_STATE_HOME DEFAULT=@{HOME}/.local/state
 ## clean home dir
 
 xrdb -load ~/.config/X11/Xresources
-export XAUTHORITY="$XDG_RUNTIME_DIR"/.config/X11/Xauthority <!--- Might break display managers -->
 ### zsh
 
 ### postgres
 export PSQLRC="$XDG_CONFIG_HOME/psql/psqlrc"
+export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
 ### other
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 
