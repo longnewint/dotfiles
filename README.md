@@ -46,6 +46,7 @@ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
 
 ## clean home dir
+xrdb -load ~/.config/X11/xresources
 export XAUTHORITY="$XDG_RUNTIME_DIR"/.config/X11/Xauthority <!--- Might break display managers -->
 
 
