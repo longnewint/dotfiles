@@ -45,6 +45,11 @@ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
 
+## clean home dir
+export XAUTHORITY="$XDG_RUNTIME_DIR"/.config/X11/Xauthority <!--- Might break display managers -->
+
+
+
 ## change console font to spleen
 sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
 
