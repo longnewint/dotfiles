@@ -88,10 +88,6 @@ export NNN_COLORS='#48afd609'
 export NNN_FCOLORS='41dc6d8e006033f7c6d6aba7'
 export NNN_TRASH=1
 
-# Quote
-quote='"May each of you rise high by spending each day of a long life aiming low."'
-echo -e "\n$quote\n"
-
 # Load external configuration
 function load () {
     [ -f $1 ] && source $1
