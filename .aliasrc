@@ -19,6 +19,11 @@ alias xfboot="xfce4-session-logout --reboot"
 alias lout="xfce4-session-logout --logout"
 alias sus="xfce4-session-logout --suspend"
 alias lk="i3lock"
+alias khalt="qdbus org.kde.Shutdown /Shutdown logoutAndShutdown"
+alias kboot="qdbus org.kde.Shutdown /Shutdown logoutAndReboot"
+alias klout="qdbus org.kde.Shutdown /Shutdown logout"
+alias ksl="qdbus org.kde.kglobalaccel /component/org_kde_powerdevil invokeShortcut 'Sleep'"
+alias klk="qdbus org.kde.screensaver /ScreenSaver Lock"
 
 # Development aliases
 alias doc="chromium-browser /usr/share/javadoc/java/index.html"
