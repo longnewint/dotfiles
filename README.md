@@ -17,27 +17,6 @@ sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-a
 
 0xProto
 
-## set default xfce themes and icons
-xfconf-query -c xsettings -p /Net/ThemeName -s ""
-fconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita"
-xfconf-query -c xfwm4 -p /general/theme -s "Default"
-
-## set i3lock as the default lock program and enable lock on suspend
-xfconf-query --create -c xfce4-session -p /general/LockCommand -t string -s "i3lock"
-xfconf-query --create -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s true
-
-## find pulse audio plugin number
-xfconf-query -c xfce4-panel -lv | grep pulseaudio
-
-## change volume step to 3 with plugin number 8
-xfconf-query -c xfce4-panel -p /plugins/plugin-8/volume-step --create -t int -s 3
-
-## change font setting of power manager plugin on xfce panel(~/.config/gtk-3.0/gtk.css)
-#xfce4-power-manager-plugin {
-	font-family: 'Inter SemiBold';
-	font-size: 16px;
-}
-
 ## fixing backlight issues with kernel parameters
 Edit file /etc/default/grub
 Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
