@@ -55,3 +55,7 @@
   #autoupdate = true
 [core]
   #excludesfile = /home/nhl/.gitignore
+[rebase]
+  #autoSquash = true
+  #autoStash = true
+  #updateRefs = true
