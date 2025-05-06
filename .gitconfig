@@ -27,3 +27,7 @@
   defaultBranch = main
 [column]
   ui = auto
+[branch]
+  sort = -commiterdate
+[tag]
+  sort = version:refname
