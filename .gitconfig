@@ -45,4 +45,7 @@
   #pruneTags = true
   #all = true
 
+# Maybe
+[help]
+  autocorrect = prompt
 
