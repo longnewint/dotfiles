@@ -59,3 +59,8 @@
   #autoSquash = true
   #autoStash = true
   #updateRefs = true
+[pull]
+  rebase = true
+[merge]
+  conflictstyle = zdiff3
+
