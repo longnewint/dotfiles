@@ -48,4 +48,5 @@
 # Maybe
 [help]
   autocorrect = prompt
-
+[commit]
+  verbose = true
