@@ -1,8 +1,6 @@
 [user]
 	name = Long Nguyen
 	email = longnewint@gmail.com
-[init]
-	defaultBranch = main
 [alias]
   which = !git branch | grep -i
   summary = !git log \
@@ -25,3 +23,7 @@
   cim = commit -m
   ciam = commit -am
   ps = push origin main
+[init]
+  defaultBranch = main
+[column]
+  ui = auto
