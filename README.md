@@ -5,8 +5,7 @@ keepcache=True
 
 ## install zsh
 sudo dnf install zsh\
-chsh <USER_NAME>\
-mkdir -p ~/.cache/zsh
+sudo chsh <USER_NAME>
 
 ## install extra apps
 sudo dnf install chromium GraphicsMagick mpv neovim nnn qview rofi sxiv trash-cli
