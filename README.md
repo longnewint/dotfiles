@@ -6,6 +6,9 @@ keepcache=True
 ## change kde to x11
 sudo dnf install plasma-workspace-x11
 
+## kde-extra
+sudo dnf install qt
+
 ## install zsh
 sudo dnf install zsh\
 sudo chsh <USER_NAME>
