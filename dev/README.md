@@ -14,6 +14,10 @@ sudo -u postgres psql
 CREATE ROLE dev WITH SUPERUSER CREATEDB LOGIN PASSWORD 'pass';
 change postgres user password: \password postgres
 
+## postgres login error
+sudo -e /var/lib/pgsql/data/pg_hba.conf
+change authentication method for all database to md5
+
 ## dbeaver vim config
 Go to Help > Install New Software
 Click on Add...
