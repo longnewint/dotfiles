@@ -4,7 +4,7 @@ defaultyes=True
 keepcache=True
 
 ## install extra apps
-sudo dnf install chromium GraphicsMagick mpv neovim nnn qview rofi sxiv
+sudo dnf install chromium GraphicsMagick mpv neovim nnn qview rofi sxiv trash-cli
 
 ## install extra system utils
 sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr wmctrl xrandr
