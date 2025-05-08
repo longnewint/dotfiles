@@ -1,9 +1,4 @@
 
-## install zsh
-sudo dnf install zsh
-chsh <USER_NAME>
-mkdir -p ~/.cache/zsh
-
 ## install sdkman and java
 
 ## add $PATH=$JAVA_HOME/bin:$PATH to ~/.profile

@@ -1,7 +1,12 @@
 ## dnf package manager config /etc/dnf/dnf.conf
-fastestmirror=True
-defaultyes=True
+fastestmirror=True\
+defaultyes=True\
 keepcache=True
+
+## install zsh
+sudo dnf install zsh\
+chsh <USER_NAME>\
+mkdir -p ~/.cache/zsh
 
 ## install extra apps
 sudo dnf install chromium GraphicsMagick mpv neovim nnn qview rofi sxiv trash-cli
