@@ -1,8 +1,6 @@
 
 ## install sdkman and java
 
-## add $PATH=$JAVA_HOME/bin:$PATH to ~/.profile
-
 ## install javadoc
 sudo dnf install java-21-openjdk-javadoc
 
