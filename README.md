@@ -10,7 +10,7 @@ sudo dnf install chromium GraphicsMagick mpv neovim nnn qview rofi sxiv trash-cl
 sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr wmctrl xrandr
 
 ## install dev tools
-sudo dnf install bat fd-find fzf git tmux zoxide
+sudo dnf install bat fd-find fzf gh git tmux zoxide
 
 ## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
