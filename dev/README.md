@@ -11,7 +11,8 @@ sudo postgresql-setup --initdb --unit postgresql
 
 ## login as postgres user and create dev role
 sudo -u postgres psql
-CREATE ROLE dev WITH SUPERUSER CREATEDB LOGIN PASSWORD '1234';
+CREATE ROLE dev WITH SUPERUSER CREATEDB LOGIN PASSWORD 'pass';
+change postgres user password: \password postgres
 
 ## dbeaver vim config
 Go to Help > Install New Software
