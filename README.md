@@ -14,7 +14,7 @@ sudo dnf install zsh\
 sudo chsh <USER_NAME>
 
 ## install extra apps
-sudo dnf install chromium GraphicsMagick mpv neovim nnn qview qbittorrent rofi sxiv trash-cli
+sudo dnf install calibre chromium GraphicsMagick mpv neovim nnn qview qbittorrent rofi sxiv trash-cli
 
 ## install extra system utils
 sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr wmctrl xrandr
