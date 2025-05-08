@@ -3,6 +3,9 @@ fastestmirror=True\
 defaultyes=True\
 keepcache=True
 
+## change kde to x11
+sudo dnf install plasma-workspace-x11
+
 ## install zsh
 sudo dnf install zsh\
 sudo chsh <USER_NAME>
