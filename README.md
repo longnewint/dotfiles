@@ -28,7 +28,7 @@ sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-a
 0xProto
 
 ## fixing backlight issues with kernel parameters
-Edit file /etc/default/grub
+Edit file /etc/default/grub \
 Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
 
 ## update new grub config
@@ -37,9 +37,14 @@ sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
 
-## xdg config @ /etc/security/pam_env.conf
-XDG_DATA_HOME DEFAULT=@{HOME}/.local/share
-XDG_STATE_HOME DEFAULT=@{HOME}/.local/state
+
+## change console font to spleen
+sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
+
+sudo -e /etc/vconsole.conf
+FONT="spleen-12x24"
+
+sudo dracut -f
 
 ## clean home dir
 
@@ -51,16 +56,4 @@ export PSQLRC="$XDG_CONFIG_HOME/psql/psqlrc"
 export PSQL_HISTORY="$XDG_STATE_HOME/psql_history"
 ### other
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
-
-## change console font to spleen
-sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
-
-sudo -e /etc/vconsole.conf
-FONT="spleen-12x24"
-
-sudo dracut -f
-
-## mpv config
-https://github.com/hl2guide/better-mpv-config
-https://github.com/Zabooby/mpv-config
 
