@@ -3,7 +3,6 @@ alias l="ls"
 alias ll="ls -al"
 alias v="nvim"
 alias fetch="fastfetch"
-alias fz="fzf"
 alias tm="tmux"
 
 # dnf
