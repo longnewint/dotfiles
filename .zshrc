@@ -82,6 +82,14 @@ n()
     fi
 }
 
+# fuzzy find repo
+fz() {
+  z $(find ~/repo -maxdepth 3 \
+    -type d -name '.git'  -prune -o \
+    -type d -name target -prune -o \
+  -type d -print | fzf)
+}
+
 # nnn environment
 #export NNN_BMS='h:~;d:~/Downloads;m:~/textbook;t:~/Algonquin/L4Theory;l:~/Algonquin/L4Lab'
 export NNN_COLORS='#48afd609'
