@@ -84,10 +84,12 @@ n()
 
 # fuzzy find repo
 fz() {
-  z $(find ~/repo -maxdepth 3 \
+  local dir_name
+  dir_name=$(find ~/repo -maxdepth 3 \
     -type d -name '.git'  -prune -o \
     -type d -name target -prune -o \
-  -type d -print | fzf)
+  -type d -print | fzf) || return
+  z $dir_name
 }
 
 # nnn environment
