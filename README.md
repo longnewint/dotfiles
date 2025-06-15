@@ -14,14 +14,14 @@ sudo dnf install zsh\
 sudo chsh <USER_NAME>
 
 ## install extra apps
-sudo dnf install ffmpeg ImageMagick xclip
+sudo dnf install ffmpeg ImageMagick poppler xclip\
 sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
 
 ## install extra system utils
 sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr wmctrl xrandr
 
 ## install dev tools
-sudo dnf install bat fd-find fzf git jq rg tmux zoxide
+sudo dnf install bat fd-find fzf git jq ripgrep tmux zoxide
 
 ## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
