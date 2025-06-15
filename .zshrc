@@ -92,12 +92,6 @@ fz() {
   z $dir_name
 }
 
-# nnn environment
-#export NNN_BMS='h:~;d:~/Downloads;m:~/textbook;t:~/Algonquin/L4Theory;l:~/Algonquin/L4Lab'
-export NNN_COLORS='#48afd609'
-export NNN_FCOLORS='41dc6d8e006033f7c6d6aba7'
-export NNN_TRASH=1
-
 # Load external configuration
 function load () {
     [ -f $1 ] && source $1
