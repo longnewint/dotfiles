@@ -14,7 +14,7 @@ sudo dnf install zsh\
 sudo chsh <USER_NAME>
 
 ## install extra apps
-sudo dnf install ffmpeg ImageMagick p7zip p7zip-plugins xclip
+sudo dnf install ffmpeg ImageMagick xclip
 sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
 
 ## install extra system utils
