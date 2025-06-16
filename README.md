@@ -28,6 +28,8 @@ sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-a
 
 0xProto
 
+## set kde default cursor at /usr/share/icons/default
+
 ## fixing backlight issues with kernel parameters
 Edit file /etc/default/grub \
 Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
@@ -37,7 +39,6 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
 ## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
-
 
 ## change console font to spleen
 sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
