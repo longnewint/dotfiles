@@ -20,7 +20,7 @@ alias ksl="qdbus org.kde.kglobalaccel /component/org_kde_powerdevil invokeShortc
 alias klk="qdbus org.kde.screensaver /ScreenSaver Lock"
 
 # Development aliases
-alias doc="chromium-browser /usr/share/javadoc/java/index.html"
+alias jdoc="chromium-browser /usr/share/javadoc/java/index.html"
 alias g="git"
 alias j="java"
 
