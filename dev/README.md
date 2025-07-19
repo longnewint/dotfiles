@@ -1,6 +1,9 @@
 
 ## install sdkman and java
 
+## install awscli
+sudo dnf install awscli2
+
 ## install javadoc
 sudo dnf install java-21-openjdk-javadoc
 
