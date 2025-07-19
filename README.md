@@ -4,7 +4,7 @@ defaultyes=True\
 keepcache=True
 
 ## kde-extra
-sudo dnf install qt
+sudo dnf install kdotool qt
 
 ## install zsh
 sudo dnf install zsh\
