@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -eu
-
-xclip -i -selection clipboard $1

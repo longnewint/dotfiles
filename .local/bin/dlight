@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -eu
-
-ddcutil setvcp 10 $1
