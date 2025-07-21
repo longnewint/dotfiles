@@ -77,11 +77,6 @@ function load () {
 
 load "$HOME/.aliasrc"
 
-# Auto start x server on tty 1
-if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec startx
-fi
-
 # zoxide
 eval "$(zoxide init zsh)"
 
