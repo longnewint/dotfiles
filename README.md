@@ -15,7 +15,7 @@ sudo dnf install ffmpeg ImageMagick poppler\
 sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
 
 ## install extra system utils
-sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr wmctrl 
+sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr
 
 ## install dev tools
 sudo dnf install bat fd-find fzf git jq ripgrep tmux zoxide
