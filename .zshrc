@@ -66,7 +66,7 @@ fz() {
   dir_name=$(find ~/repo -maxdepth 3 \
     -type d -name '.git'  -prune -o \
     -type d -name target -prune -o \
-  -type d -print | fzf) || return
+  -type d -print | fzf --reverse) || return
   z $dir_name
 }
 
