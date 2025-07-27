@@ -4,6 +4,7 @@ alias ll="ls -al"
 alias v="nvim"
 alias fetch="fastfetch"
 alias tm="tmux"
+alias tp="btop"
 
 # dnf
 alias ud="sudo dnf check-update"
