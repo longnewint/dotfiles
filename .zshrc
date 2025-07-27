@@ -70,6 +70,24 @@ fz() {
   z $dir_name
 }
 
+fzn() {
+  local file_name
+  file_name=$(find ~/notes -maxdepth 3 \
+    -type d -name '.git'  -prune -o \
+  -type f -print | fzf --reverse) || return
+  nvim $file_name
+}
+
+# fuzzy find doc folder
+doc() {
+  local dir_name
+  dir_name=$(find ~/docs -maxdepth 3 \
+    -type d -name '.git'  -prune -o \
+    -type d -name target -prune -o \
+  -type d -print | fzf --reverse) || return
+  z $dir_name
+}
+
 # Load external configuration
 function load () {
     [ -f $1 ] && source $1
