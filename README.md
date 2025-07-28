@@ -45,6 +45,10 @@ FONT="spleen-12x24"
 
 sudo dracut -f
 
+## fcitx5
+https://fedoraproject.org/wiki/I18N/Fcitx5
+https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#KDE_Plasma
+
 ## clean home dir
 
 xrdb -load ~/.config/X11/Xresources
