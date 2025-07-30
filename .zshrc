@@ -1,7 +1,7 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1='%F{072}%1~%f - '
+PS1='%F{183}%1~%f - '
 setopt autocd nomatch
 setopt interactive_comments
 stty stop undef
