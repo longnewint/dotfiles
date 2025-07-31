@@ -23,7 +23,7 @@ sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr
 
 
 ## install dev tools
-sudo dnf install bat fd-find fzf git git-delta jq ripgrep tmux zoxide
+sudo dnf install bat fd-find fzf git git-delta jq lsd ripgrep tmux zoxide
 
 
 ## install fonts
