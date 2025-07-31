@@ -3,39 +3,50 @@ fastestmirror=True\
 defaultyes=True\
 keepcache=True
 
+
 ## kde-extra
 sudo dnf install kdotool qt
+
 
 ## install zsh
 sudo dnf install zsh\
 sudo chsh <USER_NAME>
 
+
 ## install extra apps
 sudo dnf install ffmpeg ImageMagick poppler\
 sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
 
+
 ## install extra system utils
 sudo dnf install btop duf fastfetch hwinfo ncdu procs tldr
 
+
 ## install dev tools
 sudo dnf install bat fd-find fzf git git-delta jq ripgrep tmux zoxide
+
 
 ## install fonts
 sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-all source-foundry-hack-fonts rsms-inter-fonts google-roboto-fonts google-noto-fonts-common google-noto-sans-cjk-fonts lato-fonts google-rubik-fonts
 
 0xProto
 
+
 ## set kde default cursor at /usr/share/icons/default
+
 
 ## fixing backlight issues with kernel parameters
 Edit file /etc/default/grub \
 Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
 
+
 ## update new grub config
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
+
 ## increase console font size https://martin.rpdev.net/2017/01/21/setting-console-font-size-on-hidpi-screens-in-fedora.html
 https://blog.wxm.be/2014/08/29/increase-font-in-grub-for-high-dpi.html
+
 
 ## change console font to spleen
 sudo cp spleen-12x24.psfu /lib/kbd/consolefonts
@@ -45,9 +56,11 @@ FONT="spleen-12x24"
 
 sudo dracut -f
 
+
 ## fcitx5
 https://fedoraproject.org/wiki/I18N/Fcitx5
 https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#KDE_Plasma
+
 
 ## clean home dir
 
