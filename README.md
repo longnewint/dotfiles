@@ -15,7 +15,7 @@ sudo chsh <USER_NAME>
 
 ## install extra apps
 sudo dnf install ffmpeg ImageMagick poppler\
-sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
+sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent sxiv
 
 
 ## install extra system utils
@@ -35,9 +35,16 @@ sudo dnf install dejavu-fonts-all liberation-fonts-common bitstream-vera-fonts-a
 ## set kde default cursor at /usr/share/icons/default
 
 
+## RPM Fusion configuration
+https://rpmfusion.org/Configuration
+
+## extra codecs and intel non-free driver
+https://rpmfusion.org/Howto/Multimedia
+
+
 ## fixing backlight issues with kernel parameters
 Edit file /etc/default/grub \
-Add acpi_backlight=vendor to GRUB_CMDLINE_LINUX
+Add acpi_backlight=native to GRUB_CMDLINE_LINUX
 
 
 ## update new grub config
