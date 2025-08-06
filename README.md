@@ -19,7 +19,7 @@ sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent rofi sxiv
 
 
 ## install extra system utils
-sudo dnf install btop duf fastfetch hwinfo duf procs tldr
+sudo dnf install btop duf fastfetch hwinfo libva-utils duf procs tldr
 
 
 ## install dev tools
