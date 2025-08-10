@@ -1,4 +1,7 @@
 
+# Hack Nerd font
+https://github.com/ryanoasis/nerd-fonts/releases
+
 # catppuccin for cli tools
 https://github.com/catppuccin/yazi
 https://github.com/catppuccin/fzf
