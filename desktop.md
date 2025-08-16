@@ -1,4 +1,7 @@
 
+# Tela Icon theme
+https://store.kde.org/p/1279924
+
 # Hack Nerd font
 https://github.com/ryanoasis/nerd-fonts/releases
 
