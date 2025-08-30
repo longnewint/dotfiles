@@ -1,10 +1,14 @@
 # System aliases
-alias l="ls"
-alias ll="ls -al"
+alias ls="lsd"
+alias l="lsd -1"
+alias la="lsd -1A"
+alias ll="lsd -l"
+alias lla="lsd -lA"
 alias v="nvim"
 alias fetch="fastfetch"
 alias tm="tmux"
 alias bt="btop"
+alias du="dust"
 
 # dnf
 alias ud="sudo dnf check-update"
@@ -29,3 +33,4 @@ alias vk="valkey-cli"
 # Application
 alias iv="qimgv"
 alias sx="sxiv"
+
