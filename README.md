@@ -15,7 +15,7 @@ sudo chsh <USER_NAME>
 
 ## install extra apps
 sudo dnf install ffmpeg ImageMagick poppler\
-sudo dnf install calibre chromium kitty mpv neovim qview qbittorrent sxiv
+sudo dnf install calibre chromium foot kitty mpv neovim qview qbittorrent sxiv
 
 
 ## install extra system utils
