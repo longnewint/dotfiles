@@ -64,6 +64,12 @@ FONT="spleen-12x24"
 sudo dracut -f
 
 
+## reboot, switch to a different tty and remove sddm
+
+## install greetd & tuigreet
+https://wiki.archlinux.org/title/Greetd \
+
+
 ## fcitx5
 https://fedoraproject.org/wiki/I18N/Fcitx5
 https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#KDE_Plasma
