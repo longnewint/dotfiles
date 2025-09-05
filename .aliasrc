@@ -9,6 +9,7 @@ alias fetch="fastfetch"
 alias tm="tmux"
 alias bt="btop"
 alias du="dust"
+alias pk="pkill"
 
 # dnf
 alias ud="sudo dnf check-update"
