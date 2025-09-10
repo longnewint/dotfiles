@@ -28,6 +28,9 @@ Name: Vrapper
 Location: https://vrapper.sourceforge.net/update-site/stable/
 Install Vrapper
 
+## golang
+task.dev
+
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
 
