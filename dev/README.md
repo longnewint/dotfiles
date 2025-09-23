@@ -29,7 +29,7 @@ Location: https://vrapper.sourceforge.net/update-site/stable/
 Install Vrapper
 
 ## golang
-task.dev
+suod dnf install golang go-task
 
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
