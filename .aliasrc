@@ -30,6 +30,7 @@ alias jdoc="chromium-browser /usr/share/javadoc/java/index.html"
 alias g="git"
 alias j="java"
 alias vk="valkey-cli"
+alias task="go-task"
 
 # Application
 alias iv="qimgv"
