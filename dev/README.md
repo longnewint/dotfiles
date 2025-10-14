@@ -28,8 +28,11 @@ Name: Vrapper
 Location: https://vrapper.sourceforge.net/update-site/stable/
 Install Vrapper
 
+# python
+sudo dnf install python3-pip python-launcher
+
 ## golang
-suod dnf install golang go-task
+sudo dnf install golang go-task
 
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
