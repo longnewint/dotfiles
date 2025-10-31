@@ -7,6 +7,9 @@ sudo dnf install awscli2
 ## install javadoc
 sudo dnf install java-21-openjdk-javadoc
 
+## k8s
+https://kubernetes.io/docs/tasks/tools/
+
 ## postgres install and init
 ref: https://docs.fedoraproject.org/en-US/quick-docs/postgresql/
 sudo dnf install postgresql-server postgresql-contrib
