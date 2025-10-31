@@ -31,6 +31,7 @@ alias g="git"
 alias j="java"
 alias vk="valkey-cli"
 alias task="go-task"
+alias kctl="kubectl"
 
 # Application
 alias iv="qimgv"
