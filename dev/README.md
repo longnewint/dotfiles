@@ -8,7 +8,11 @@ sudo dnf install awscli2
 sudo dnf install java-21-openjdk-javadoc
 
 ## k8s
+Install kubectl, minikube
 https://kubernetes.io/docs/tasks/tools/
+
+Set rootless config for podman
+minikube config set rootless true
 
 ## postgres install and init
 ref: https://docs.fedoraproject.org/en-US/quick-docs/postgresql/
