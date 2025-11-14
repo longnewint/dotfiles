@@ -39,7 +39,7 @@ Install Vrapper
 sudo dnf install python3-pip python-launcher
 
 ## golang
-sudo dnf install golang go-task
+sudo dnf install golang
 
 ## c dev tool
 sudo dnf groupinstall 'Development Tools'
