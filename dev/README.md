@@ -7,6 +7,8 @@ sudo dnf install awscli2
 ## install javadoc
 sudo dnf install java-21-openjdk-javadoc
 
+## podman / docker
+
 ## k8s
 Install kubectl, minikube
 https://kubernetes.io/docs/tasks/tools/
