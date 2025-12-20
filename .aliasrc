@@ -4,12 +4,15 @@ alias l="lsd -1 --icon never"
 alias la="lsd -1A --icon never"
 alias ll="lsd -l --icon never"
 alias lla="lsd -lA --icon never"
-alias v="nvim"
-alias fetch="fastfetch"
-alias tm="tmux"
 alias bt="btop"
 alias du="dust"
 alias pk="pkill"
+
+alias v="nvim"
+alias tm="tmux"
+alias make="mk"
+
+alias fetch="fastfetch"
 
 # dnf
 alias ud="sudo dnf check-update"
