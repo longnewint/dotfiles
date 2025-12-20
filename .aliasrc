@@ -10,7 +10,7 @@ alias pk="pkill"
 
 alias v="nvim"
 alias tm="tmux"
-alias make="mk"
+alias mk="make"
 
 alias fetch="fastfetch"
 
