@@ -60,12 +60,24 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# zle
+zle -N fzo
+
 # fuzzy find repo
 fz() {
   local dir_name
   dir_name=$(find ~/repo -maxdepth 3 \
+    -type d -name '.vscode'  -prune -o \
+    -type d -name '.settings'  -prune -o \
+    -type d -name '.idea'  -prune -o \
     -type d -name '.git'  -prune -o \
-    -type d -name target -prune -o \
+    -type d -name '.gradle'  -prune -o \
+    -type d -name 'build'  -prune -o \
+    -type d -name '.mvn'  -prune -o \
+    -type d -name 'target' -prune -o \
+    -type d -name 'dist'  -prune -o \
+    -type d -name 'node_modules' -prune -o \
+    -type d -name 'bin'  -prune -o \
   -type d -print | fzf --reverse) || return
   z $dir_name
 }
@@ -78,6 +90,25 @@ fzn() {
   nvim $file_name
 }
 
+fzo() {
+  file_name=$(find . -maxdepth 3 \
+    -type d -name '.vscode'  -prune -o \
+    -type d -name '.settings'  -prune -o \
+    -type d -name '.idea'  -prune -o \
+    -type d -name '.git'  -prune -o \
+    -type d -name '.gradle'  -prune -o \
+    -type d -name 'build'  -prune -o \
+    -type d -name '.mvn'  -prune -o \
+    -type d -name 'target' -prune -o \
+    -type d -name 'dist'  -prune -o \
+    -type d -name 'node_modules' -prune -o \
+    -type d -name 'bin'  -prune -o \
+  -type f -print | fzf --reverse) || return
+  nvim $file_name
+
+  zle reset-prompt
+}
+
 # fuzzy find doc folder
 doc() {
   local dir_name
@@ -87,6 +118,9 @@ doc() {
   -type d -print | fzf --reverse) || return
   z $dir_name
 }
+
+# bind keys
+bindkey '^O' fzo
 
 # Load external configuration
 function load () {
