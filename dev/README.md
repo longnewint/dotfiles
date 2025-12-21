@@ -43,6 +43,8 @@ sudo dnf install python3-pip python-launcher
 ## golang
 sudo dnf install golang
 
-## c dev tool
-sudo dnf groupinstall 'Development Tools'
+## rust dev tool
+sudo dnf install rust cargo cmake
 
+## dev tools
+sudo dnf install @development-tools
