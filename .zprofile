@@ -1,6 +1,14 @@
+export TERM=xterm-256color
 export EDITOR=/usr/bin/nvim
+
+# java
 export JAVA_HOME=/home/nhl/.sdkman/candidates/java/current
 export PATH=$JAVA_HOME/bin:$PATH
+
+# golang
+export GOPATH=~/.go
+export GOMODCACHE=~/.go/cache
+
 export PATH=/usr/local/go/bin:$PATH
 
 # input method
@@ -8,8 +16,8 @@ export XMODIFIERS=@im=fcitx
 unset GTK_IM_MODULE
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/bin:$HOME/bin/app" ]]; then
-  PATH="$HOME/bin:$HOME/bin/app:$PATH"
+if ! [[ "$PATH" =~ "$HOME/scripts:$HOME/scripts/app" ]]; then
+  PATH="$HOME/scripts:$HOME/scripts/app:$PATH"
 fi
 export PATH
 
@@ -22,3 +30,6 @@ export FZF_DEFAULT_OPTS=" \
 --color=border:#313244,label:#CDD6F4"
 
 export FZF_CTRL_R_OPTS="--reverse"
+
+# bat
+export BAT_THEME="Catppuccin Mocha"
