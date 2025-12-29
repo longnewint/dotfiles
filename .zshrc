@@ -16,8 +16,7 @@ setopt inc_append_history
 #bindkey -v
 export KEYTIMEOUT=1
 
-# vi mode plugin
-source $HOME/.config/zsh/zsh-vi-mode.plugin.zsh
+bindkey '^z' fzf-history-widget
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -25,17 +24,6 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
-
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
-
-# Edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
 
 # yazi cd on quit
 function y() {
@@ -120,6 +108,17 @@ eval "$(zoxide init zsh)"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# vi mode plugin
+source $HOME/.config/zsh/zsh-vi-mode.plugin.zsh
+
+ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BEAM
+ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+ZVM_VI_HIGHLIGHT_FOREGROUND=#1e1e2e
+ZVM_VI_HIGHLIGHT_BACKGROUND=#f9e2af
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
